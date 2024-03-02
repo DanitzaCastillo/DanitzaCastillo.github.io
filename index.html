@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naho hermosa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color:  #000000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color:  #000000;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 25px;
+      height: 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Te quiero colageno hermoso</h1>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LPgkcqWS_60?si=T9eqe68EuP_j8quo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <button class="btn" onclick="mostrarFrase()">Mostrar Frase</button>
+  <p id="frase"></p>
+</div>
+
+<script>
+  const frases = [
+    "Amo cada pendejada con la que sales.",
+    "Gracias por hacerme feliz.",
+    "Gracias por sacarme tanto el mal genio :) .",
+    "Eres especial en mi vida.",
+    "No se imagina lo mucho que la quiero.",
+    "Le haces muy bien a mi vida.",
+    "Cuando estoy mal solo pienso en ti, se que esta mal porque no se si estoy dependiendo de alguien para que me haga sentir bien.",
+    "Eres uno de los mejores regalos que ha llegado a mi vida.",
+    "Espero verte pronto.",
+  
+  ];
+
+  function mostrarFrase() {
+    const randomIndex = Math.floor(Math.random() * frases.length);
+    document.getElementById('frase').innerText = frases[randomIndex];
+  }
+</script>
+
+</body>
+</html>
