@@ -25,7 +25,7 @@
       display: inline-block;
       padding: 10px 20px;
       margin: 10px;
-      background-color:  #000000;
+      background-color: #000000;
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -33,7 +33,7 @@
       transition: background-color 0.3s ease;
     }
     .btn:hover {
-      background-color:  #000000;
+      background-color: #333;
     }
     .video-container {
       position: relative;
@@ -72,12 +72,18 @@
     "Cuando estoy mal solo pienso en ti, se que esta mal porque no se si estoy dependiendo de alguien para que me haga sentir bien.",
     "Eres uno de los mejores regalos que ha llegado a mi vida.",
     "Espero verte pronto.",
-  
+    "En mi corazon ocupas un lugar importante.",
+    "Desde el fondo de mi corazon se que donde te marches de vida va a quedar un gran vacion el cual nadie podra llenar.",
+    "Eres mi bebé, mi niña, la cual tiene un corazon de pollito hermoso.",
+    "Mi colageno no se imagina lo feliz que me hace.",
+    "Pagueme por aguantarte tanto :v.",
   ];
 
+  let indiceFrase = 0;
+
   function mostrarFrase() {
-    const randomIndex = Math.floor(Math.random() * frases.length);
-    document.getElementById('frase').innerText = frases[randomIndex];
+    document.getElementById('frase').innerText = frases[indiceFrase];
+    indiceFrase = (indiceFrase + 1) % frases.length;
   }
 </script>
 
